@@ -4,8 +4,8 @@ from MyHybridImages import myHybridImages
 from MyConvolution import convolve
 
 # Step 1: Load two images
-image1_path = "/Users/mac/PycharmProjects/COMP3204CW1/data/cat.bmp"
-image2_path = "/Users/mac/PycharmProjects/COMP3204CW1/data/dog.bmp"
+image1_path = "/Users/mac/PycharmProjects/COMP3204CW1/data/dog.bmp"
+image2_path = "/Users/mac/PycharmProjects/COMP3204CW1/data/cat.bmp"
 
 image1 = cv2.imread(image1_path)
 image2 = cv2.imread(image2_path)
