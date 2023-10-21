@@ -42,4 +42,6 @@ def convolve(image: np.ndarray, kernel: np.ndarray) -> np.ndarray:
     if channels == 1:
         output = output[:, :, 0]
 
+    #output = output.clip(0,255)
+
     return output
