@@ -1,5 +1,5 @@
 import numpy as np
-from MyConvolution import convolve
+from MyConvolution import convolve, clip
 
 
 def makeGaussianKernel(sigma: float) -> np.ndarray:
@@ -43,6 +43,6 @@ def myHybridImages(lowImage: np.ndarray, lowSigma: float,
     # Create the hybrid image
     hybrid_image = low_pass_lowImage + high_pass_highImage
 
-    #hybrid_image = np.clip(hybrid_image, 0, 255)
+    hybrid_image = clip(hybrid_image)
 
     return hybrid_image

@@ -18,7 +18,7 @@ def check_difference(expected, actual):
 def display_chart(differences):
     print("pixel position(x,y) | expected (R,G,B) | actual (R,G,B) | difference R | difference G | difference B")
     for x, y, exp, act, diff in differences:
-        print(f"({x}, {y}) | {tuple(exp)} | {tuple(act)} | {diff[0]:.7f} | {diff[1]:.7f} | {diff[2]:.7f}")
+        print(f"({x}, {y}) | {tuple(exp)} | {tuple(act)} | {diff[0]} | {diff[1]} | {diff[2]}")
 
 
 
